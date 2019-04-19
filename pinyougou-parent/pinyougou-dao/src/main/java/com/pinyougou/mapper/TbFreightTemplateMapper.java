@@ -1,8 +1,8 @@
 package com.pinyougou.mapper;
 
 import org.apache.ibatis.annotations.Param;
-import pojo.TbFreightTemplate;
-import pojo.TbFreightTemplateExample;
+import com.pinyougou.pojo.TbFreightTemplate;
+import com.pinyougou.pojo.TbFreightTemplateExample;
 
 import java.util.List;
 

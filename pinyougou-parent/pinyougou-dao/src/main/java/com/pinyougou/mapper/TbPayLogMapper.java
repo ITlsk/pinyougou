@@ -1,8 +1,8 @@
 package com.pinyougou.mapper;
 
 import org.apache.ibatis.annotations.Param;
-import pojo.TbPayLog;
-import pojo.TbPayLogExample;
+import com.pinyougou.pojo.TbPayLog;
+import com.pinyougou.pojo.TbPayLogExample;
 
 import java.util.List;
 

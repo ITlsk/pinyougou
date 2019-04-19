@@ -2,8 +2,8 @@ package com.pinyougou.mapper;
 
 
 import org.apache.ibatis.annotations.Param;
-import pojo.TbSpecificationOption;
-import pojo.TbSpecificationOptionExample;
+import com.pinyougou.pojo.TbSpecificationOption;
+import com.pinyougou.pojo.TbSpecificationOptionExample;
 
 import java.util.List;
 

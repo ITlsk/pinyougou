@@ -1,6 +1,6 @@
 package com.pinyougou.sellergoods.service;
 
-import pojo.TbBrand;
+import com.pinyougou.pojo.TbBrand;
 
 import java.util.List;
 

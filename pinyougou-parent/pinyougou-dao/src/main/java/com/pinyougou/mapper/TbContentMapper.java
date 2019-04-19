@@ -1,8 +1,8 @@
 package com.pinyougou.mapper;
 
 import org.apache.ibatis.annotations.Param;
-import pojo.TbContent;
-import pojo.TbContentExample;
+import com.pinyougou.pojo.TbContent;
+import com.pinyougou.pojo.TbContentExample;
 
 import java.util.List;
 

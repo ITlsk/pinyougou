@@ -1,16 +1,18 @@
 package com.pinyougou.sellergoods.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import com.pinyougou.mapper.TbBrandMapper;
 import com.pinyougou.sellergoods.service.BrandService;
-import pojo.TbBrand;
+import org.springframework.beans.factory.annotation.Autowired;
+import com.pinyougou.pojo.TbBrand;
 
 import java.util.List;
 
 @Service
 public class BrandServiceImpl implements BrandService {
 
-//	@Autowired
-//	private TbBrandMapper brandMapper;
+	@Autowired
+	private TbBrandMapper brandMapper;
 
 	@Override
 	public String testDubbo() {
@@ -20,6 +22,6 @@ public class BrandServiceImpl implements BrandService {
 	@Override
 	public List<TbBrand> findAll() {
 
-		return null;
+		return brandMapper.selectByExample(null);
 	}
 }

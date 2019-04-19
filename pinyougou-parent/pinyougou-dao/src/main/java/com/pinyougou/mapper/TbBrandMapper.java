@@ -1,8 +1,8 @@
 package com.pinyougou.mapper;
 
 import org.apache.ibatis.annotations.Param;
-import pojo.TbBrand;
-import pojo.TbBrandExample;
+import com.pinyougou.pojo.TbBrand;
+import com.pinyougou.pojo.TbBrandExample;
 
 import java.util.List;
 
