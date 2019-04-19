@@ -1,5 +1,10 @@
 package com.pinyougou.sellergoods.service;
 
+import pojo.TbBrand;
+
+import java.util.List;
+
+
 /**
  * 品牌接口
  * @author Administrator
@@ -7,5 +12,9 @@ package com.pinyougou.sellergoods.service;
  */
 public interface BrandService {
 
-	String sayHello();
+	public String testDubbo();
+
+	public List<TbBrand> findAll();
+	
+
 }
