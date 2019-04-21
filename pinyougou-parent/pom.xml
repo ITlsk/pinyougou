@@ -25,8 +25,10 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <mybatis-spring-boot>1.2.0</mybatis-spring-boot>
+        <!--<mybatis-spring-boot>1.2.0</mybatis-spring-boot>-->
         <mysql-connector>5.1.39</mysql-connector>
+        <mybatis.version>3.2.8</mybatis.version>
+        <mybatis.spring.version>1.2.2</mybatis.spring.version>
     </properties>
 
 
@@ -58,12 +60,15 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-        <!--springboot mybatis-->
         <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>${mybatis-spring-boot}</version>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>${mybatis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>${mybatis.spring.version}</version>
         </dependency>
 
         <!-- MySQL 连接驱动依赖 -->

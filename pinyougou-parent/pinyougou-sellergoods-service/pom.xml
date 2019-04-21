@@ -17,12 +17,17 @@
         <dependency>
             <groupId>com.pinyougou</groupId>
             <artifactId>pinyougou-sellergoods-interface</artifactId>
-            <version>${project.version}</version>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.pinyougou</groupId>
             <artifactId>pinyougou-dao</artifactId>
-            <version>${project.version}</version>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>1.2.2</version>
         </dependency>
     </dependencies>
 
