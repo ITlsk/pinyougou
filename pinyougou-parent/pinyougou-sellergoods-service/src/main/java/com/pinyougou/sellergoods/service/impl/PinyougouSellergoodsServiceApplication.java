@@ -1,23 +1,17 @@
 package com.pinyougou.sellergoods.service.impl;
 
-import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan;
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
-//@MapperScan(basePackages = "com.pinyougou.mapper")
-//@DubboComponentScan("com.pinyougou")
-//@EnableTransactionManagement
-//@ComponentScan("com.pinyougou")
-@EnableTransactionManagement
 @SpringBootApplication
-@EnableAutoConfiguration
-public class PinyougouSellergoodsServiceApplication {
+public class PinyougouSellergoodsServiceApplication extends SpringBootServletInitializer {
 
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(PinyougouSellergoodsServiceApplication.class);
+    }
     public static void main(String[] args) {
         SpringApplication.run(PinyougouSellergoodsServiceApplication.class, args);
     }

@@ -14,7 +14,7 @@ public interface BrandService {
 
 	public String testDubbo();
 
-	public List<TbBrand> findAll();
+	public String findAll();
 	
 
 }

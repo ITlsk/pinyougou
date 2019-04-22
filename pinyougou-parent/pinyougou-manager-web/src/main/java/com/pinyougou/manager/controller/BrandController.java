@@ -1,13 +1,10 @@
 package com.pinyougou.manager.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.pinyougou.pojo.TbBrand;
 import com.pinyougou.sellergoods.service.BrandService;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 @RestController
 @CrossOrigin
@@ -23,7 +20,7 @@ public class BrandController {
 	}
 
 	@RequestMapping("/findAll")
-	public List<TbBrand> findAll(){
+	public String findAll(){
 		return brandService.findAll();
 	}
 	
