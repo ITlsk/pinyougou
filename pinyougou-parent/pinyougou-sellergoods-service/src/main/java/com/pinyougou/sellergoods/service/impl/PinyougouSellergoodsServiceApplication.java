@@ -17,7 +17,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 
 @SpringBootApplication
 @MapperScan("com.pinyougou.dao")
-public class PinyougouSellergoodsServiceApplication extends SpringBootServletInitializer {
+public class PinyougouSellergoodsServiceApplication {
 
     @Bean
     @ConfigurationProperties(prefix="spring.datasource")
@@ -43,10 +43,6 @@ public class PinyougouSellergoodsServiceApplication extends SpringBootServletIni
         return new DataSourceTransactionManager(dataSource());
     }
 
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(PinyougouSellergoodsServiceApplication.class);
-    }
     public static void main(String[] args) {
         SpringApplication.run(PinyougouSellergoodsServiceApplication.class, args);
     }
