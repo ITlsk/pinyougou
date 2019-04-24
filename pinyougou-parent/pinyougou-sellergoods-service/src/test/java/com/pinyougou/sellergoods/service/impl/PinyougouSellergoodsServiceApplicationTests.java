@@ -1,4 +1,4 @@
-package com.pinyougou.mapper.sellergoods.service.impl;
+package com.pinyougou.sellergoods.service.impl;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
