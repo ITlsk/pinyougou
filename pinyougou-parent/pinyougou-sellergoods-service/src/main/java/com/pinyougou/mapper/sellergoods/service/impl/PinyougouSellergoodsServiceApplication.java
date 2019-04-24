@@ -16,7 +16,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 
 
 @SpringBootApplication
-@MapperScan("com.pinyougou.dao")
+//@MapperScan("com.pinyougou.mapper")
 public class PinyougouSellergoodsServiceApplication extends SpringBootServletInitializer {
 
     @Bean

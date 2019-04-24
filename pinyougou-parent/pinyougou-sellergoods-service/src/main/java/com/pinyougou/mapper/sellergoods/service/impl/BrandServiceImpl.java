@@ -1,15 +1,14 @@
 package com.pinyougou.mapper.sellergoods.service.impl;
 
-import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.dubbo.config.annotation.Service;
-import com.pinyougou.dao.TbBrandMapper;
-import com.pinyougou.mapper.pojo.TbBrand;
+import com.pinyougou.mapper.TbBrandMapper;
 import com.pinyougou.mapper.sellergoods.service.BrandService;
 import com.pinyougou.pojo.TbBrand;
-import com.pinyougou.sellergoods.service.BrandService;
 import org.springframework.beans.factory.annotation.Autowired;
-import tk.mybatis.mapper.entity.Example;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @Service
@@ -26,7 +25,6 @@ public class BrandServiceImpl implements BrandService {
 	@Override
 	public List<TbBrand> findAll() {
 
-		Example example = new Example(TbBrand.class);
-		return brandMapper.selectByExample(example);
+		return brandMapper.selectByExample(null);
 	}
 }

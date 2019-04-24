@@ -1,8 +1,8 @@
 package com.pinyougou.mapper.manager.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.pinyougou.mapper.sellergoods.service.BrandService;
 import com.pinyougou.pojo.TbBrand;
-import com.pinyougou.sellergoods.service.BrandService;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

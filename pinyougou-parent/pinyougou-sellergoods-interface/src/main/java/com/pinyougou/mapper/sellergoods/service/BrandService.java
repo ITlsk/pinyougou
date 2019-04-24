@@ -1,6 +1,5 @@
 package com.pinyougou.mapper.sellergoods.service;
 
-import com.pinyougou.mapper.pojo.TbBrand;
 import com.pinyougou.pojo.TbBrand;
 
 import java.util.List;
