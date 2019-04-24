@@ -1,9 +1,10 @@
 package com.pinyougou.pojo;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Table(name = "tb_content_category")
-public class TbContentCategory {
+public class TbContentCategory implements Serializable {
     /**
      * 类目ID
      */

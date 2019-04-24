@@ -1,10 +1,11 @@
 package com.pinyougou.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.*;
 
 @Table(name = "tb_freight_template")
-public class TbFreightTemplate {
+public class TbFreightTemplate implements Serializable {
     @Id
     private Long id;
 

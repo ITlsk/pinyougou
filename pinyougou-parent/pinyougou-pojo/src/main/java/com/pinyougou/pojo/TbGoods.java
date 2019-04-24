@@ -1,10 +1,11 @@
 package com.pinyougou.pojo;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import javax.persistence.*;
 
 @Table(name = "tb_goods")
-public class TbGoods {
+public class TbGoods implements Serializable {
     /**
      * 主键
      */

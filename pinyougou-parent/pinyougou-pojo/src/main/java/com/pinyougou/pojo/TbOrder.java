@@ -1,11 +1,12 @@
 package com.pinyougou.pojo;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 import javax.persistence.*;
 
 @Table(name = "tb_order")
-public class TbOrder {
+public class TbOrder implements Serializable {
     /**
      * 订单id
      */

@@ -1,10 +1,11 @@
 package com.pinyougou.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.*;
 
 @Table(name = "tb_pay_log")
-public class TbPayLog {
+public class TbPayLog implements Serializable {
     /**
      * 支付订单号
      */

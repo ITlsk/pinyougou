@@ -1,10 +1,11 @@
 package com.pinyougou.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.*;
 
 @Table(name = "tb_seller")
-public class TbSeller {
+public class TbSeller implements Serializable {
     /**
      * 用户ID
      */

@@ -1,9 +1,10 @@
 package com.pinyougou.pojo;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Table(name = "tb_specification_option")
-public class TbSpecificationOption {
+public class TbSpecificationOption implements Serializable {
     /**
      * 规格项ID
      */

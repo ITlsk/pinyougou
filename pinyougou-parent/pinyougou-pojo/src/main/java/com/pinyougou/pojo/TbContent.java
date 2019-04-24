@@ -1,9 +1,10 @@
 package com.pinyougou.pojo;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Table(name = "tb_content")
-public class TbContent {
+public class TbContent implements Serializable {
     @Id
     private Long id;
 

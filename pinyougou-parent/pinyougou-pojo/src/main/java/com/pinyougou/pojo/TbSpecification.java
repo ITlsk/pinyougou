@@ -1,9 +1,10 @@
 package com.pinyougou.pojo;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Table(name = "tb_specification")
-public class TbSpecification {
+public class TbSpecification implements Serializable {
     /**
      * 主键
      */
